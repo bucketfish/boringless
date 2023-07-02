@@ -1,0 +1,22 @@
+{
+  "name": "oversimulator",
+  "description": "add a subway surfer video to whatever you're doing.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "css": ["style.css"],
+    "js": ["script.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons":{
+  },
+
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "a"
+    }
+}
