@@ -1,6 +1,6 @@
 {
-  "name": "oversimulator",
-  "description": "add a subway surfer video to whatever you're doing.",
+  "name": "boringless",
+  "description": "add a subway surfer video to whatever you're doing :)",
   "version": "1.0",
   "manifest_version": 3,
   "content_scripts": [{
@@ -17,6 +17,6 @@
 
   "action":{
       "default_popup": "index.html",
-      "default_title": "a"
+      "default_title": "boringless!"
     }
 }

@@ -8,30 +8,30 @@ chrome.runtime.onMessage.addListener(function(message, sender) {
 // // // do the thing *slightly* later than page load, because the notifs wouldn't have loaded yet
 // // setTimeout(dothings(), 100);
 function showVideo() {
-  var test = document.getElementsByClassName("oversimulator-vid-div");
+  var test = document.getElementsByClassName("boringless-vid-div");
 
   console.log(test);
 
   if (test.length >= 1) {
-    alert("you already have one oversimulator running!")
+    alert("you already have one boringless running!")
     return;
   }
 
   // var div = document.createElement("div");
-  // div.classList.add("oversimulator-vid");
+  // div.classList.add("boringless-vid");
   // document.body.appendChild(div);
   var div = document.createElement("div");
-  div.classList.add("oversimulator-vid-div");
+  div.classList.add("boringless-vid-div");
 
   var move = document.createElement("div");
-  move.classList.add("oversimulator-movement");
+  move.classList.add("boringless-movement");
   dragElement(move, div);
 
 
   var hidebutton = document.createElement("button");
   move.appendChild(hidebutton);
   hidebutton.innerHTML = "x";
-  hidebutton.classList.add("oversimulator-hidebutton");
+  hidebutton.classList.add("boringless-hidebutton");
   hidebutton.addEventListener('click', hideVideo)
 
   div.appendChild(move);
@@ -39,7 +39,7 @@ function showVideo() {
 
 
   var video = document.createElement("iframe");
-  video.classList.add("oversimulator-vid");
+  video.classList.add("boringless-vid");
   video.src = "https://www.youtube.com/embed/BkWT66jE8Hs?start=60&autoplay=1&mute=1&controls=0&fs=0&modestbranding=1";
   video.allow = "autoplay";
   video.volume = 0.2;
@@ -52,7 +52,7 @@ function showVideo() {
 
 
 function hideVideo() {
-  var test = document.getElementsByClassName("oversimulator-vid-div");
+  var test = document.getElementsByClassName("boringless-vid-div");
 
   console.log(test);
 
